@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: pink; /* Fallback para navegadores que no admiten clases de Tailwind personalizadas */
+    background-color: theme('colors.myBackground'); /* Utiliza el color personalizado definido en tailwind.config.js */
+    font-family: 'League Spartan', sans-serif;
+}
