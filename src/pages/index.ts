@@ -1,3 +1,5 @@
 export * from './HomePage'
 export * from './LayoutPage'
 export * from './AboutPage'
+export * from './BlogPage'
+export * from './PorfolioPage'

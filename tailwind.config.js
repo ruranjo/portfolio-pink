@@ -11,6 +11,8 @@ export default {
         primary: 'hsl(11, 55%, 14%)',
         secondary: 'hsl(11, 42%, 74%)',
         textColor: 'hsl(26, 96%, 23%)',
+        textColorPar: 'hsl(11, 55%, 14%)',
+        lightPink: 'hsl(15, 50%, 98%)',
       },
     },
   },

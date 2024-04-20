@@ -6,4 +6,25 @@ body {
     background-color: pink; /* Fallback para navegadores que no admiten clases de Tailwind personalizadas */
     background-color: theme('colors.myBackground'); /* Utiliza el color personalizado definido en tailwind.config.js */
     font-family: 'League Spartan', sans-serif;
+    color: theme('colors.textColorPar');
 }
+
+.hoverselect ::selection {
+    background-color: theme('colors.secondary'); /* Cambia el color de fondo del texto seleccionado */
+}
+
+.link {
+    color: theme('colors.textColor'); /* Cambia el color del texto del enlace */
+    border-bottom: 1px solid  theme('colors.secondary');
+    font-weight: 700;
+  }
+  
+  .link:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el cursor sobre el enlace */
+    color:'pink';
+    background-color: theme('colors.secondary');
+  }
+  
+  .link:visited {
+    color: theme('colors.textColor'); /* Cambia el color del enlace visitado */
+  }

@@ -1,11 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { About, Home, Layout } from './pages';
+import { About, Blog, Home, Layout, PortfolioPage } from './pages';
 
-
-const Blog = () => <div>Blog</div>;
-const Portfolio = () => <div>Portfolio</div>;
 const Publications = () => <div>Publications</div>;
 const NotFound = () => <div>404 - Page Not Found</div>;
 
@@ -20,7 +17,8 @@ const App:React.FC<{}> = () => {
         <Route element={<Layout />}>
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog/:nameblog" element={<Blog />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/publications" element={<Publications />} />
         </Route>
         
