@@ -115,7 +115,7 @@ export const blogs: BlogType[] = [
   }
 ];
 
-  const newsItems = [
+  export const newsItems = [
     {
         title: "USC Computer Science Students Awarded NSF Graduate Research Fellowships",
         date: "July 6, 2023",
