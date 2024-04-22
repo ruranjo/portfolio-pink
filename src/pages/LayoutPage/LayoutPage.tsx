@@ -22,7 +22,7 @@ const Layout: React.FC = () => {
 
   return (
     <div className="flex flex-col h-screen items-center hoverselect">
-      <div className='w-[100%] flex justify-center m-5'></div>
+      
         <div className='w-[100%] p-6 flex justify-center  bg-myBackground  fixed top-0 left-0 z-10'>
           <div className='w-[100%] flex justify-between sm:w-[65%]'>
             <Link to="/" className="flex-1 flex justify-start items-center ">
@@ -45,10 +45,10 @@ const Layout: React.FC = () => {
           </div>
         </div>
 
-      <div className="flex-1 w-[90%] border border-red-800 mt-20  sm:w-[64%]">
+      <div className="flex-1 w-[90%]  mt-28  sm:w-[64%]">
        {
         menuOpen && 
-      <nav className={`text-primary flex p-4 w-full ${menuOpen ? 'block' : 'hidden'} justify-center md:block text-base font-sans font-normal  border border-red-800`}>
+      <nav className={`text-primary flex p-4 w-full ${menuOpen ? 'block' : 'hidden'} justify-center md:block text-base font-sans font-normal`}>
         <ul className="flex flex-col justify-center opacity-90 gap-12 text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
           <ListItem to="/about" active={location.pathname === '/about'}>About</ListItem>
           <ListItem to="/blog" active={location.pathname === '/blog'}>Blog</ListItem>

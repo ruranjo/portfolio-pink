@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { blogs, tagsBlog } from '../../utils/data';
 import { TagLink } from '../../components';
 import { useParams } from 'react-router-dom';
@@ -6,6 +6,10 @@ import ItemBlog from '../../components/ItemBlog/ItemBlog';
 
 const BlogPage: React.FC<{}> = () => {
   let { nameblog } = useParams();
+
+  useEffect(() => {
+    document.title = "jose-luis | blog";
+  }, []);
 
   return (
     <div className='flex flex-col justify-between h-full'>
@@ -16,7 +20,7 @@ const BlogPage: React.FC<{}> = () => {
         {
           tagsBlog.map((taglabel, index)=>{
             return (
-              <TagLink active={false} href='#' label={taglabel} key={index} />
+              <TagLink active={false} href='#' label={taglabel} key={index} isRoute={false} />
             )
           })
         }
@@ -26,7 +30,7 @@ const BlogPage: React.FC<{}> = () => {
         </div>
 
       <div className=' flex flex-col h-full sm:flex-row '>
-        <div className=' w-[100%] flex flex-col gap-4 justify-center border border-red-600'>
+        <div className=' w-[100%] flex flex-col gap-4 justify-center '>
          {
           blogs.map((blog, index)=>{
             return (

@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { About, Blog, Home, Layout, PortfolioPage } from './pages';
-
-const Publications = () => <div>Publications</div>;
-const NotFound = () => <div>404 - Page Not Found</div>;
+import { About, Blog, Home, Layout, NotFound, Portfolio, Publications } from './pages';
 
 const App:React.FC<{}> = () => {
   return (
@@ -18,12 +15,13 @@ const App:React.FC<{}> = () => {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:nameblog" element={<Blog />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/publications" element={<Publications />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
         
         {/* Ruta comodín para páginas no encontradas */}
-        <Route path="*" element={<NotFound />} />
+        
       </Routes>
     </Router>
   );

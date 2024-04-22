@@ -1,1 +1,1 @@
-export {default as PortfolioPage} from './PorfolioPage'
+export {default as Portfolio} from './PortfolioPage'
