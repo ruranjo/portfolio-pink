@@ -50,10 +50,10 @@ const Layout: React.FC = () => {
         menuOpen && 
       <nav className={`text-primary flex p-4 w-full ${menuOpen ? 'block' : 'hidden'} justify-center md:block text-base font-sans font-normal`}>
         <ul className="flex flex-col justify-center opacity-90 gap-12 text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
-          <ListItem to="/about" active={location.pathname === '/about'}>About</ListItem>
-          <ListItem to="/blog" active={location.pathname === '/blog'}>Blog</ListItem>
-          <ListItem to="/portfolio" active={location.pathname === '/portfolio'}>Portfolio</ListItem>
-          <ListItem to="/publications" active={location.pathname === '/publications'}>Publications</ListItem>
+          <ListItem to="/portfolio-pink/about" active={location.pathname === '/about'}>About</ListItem>
+          <ListItem to="/portfolio-pink/blog" active={location.pathname === '/blog'}>Blog</ListItem>
+          <ListItem to="/portfolio-pink/portfolio" active={location.pathname === '/portfolio'}>Portfolio</ListItem>
+          <ListItem to="/portfolio-pink/publications" active={location.pathname === '/publications'}>Publications</ListItem>
         </ul>
       </nav>
        }
