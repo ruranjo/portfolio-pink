@@ -8,15 +8,15 @@ const App:React.FC<{}> = () => {
     <Router>
       <Routes>
        {/* Página de inicio sin Layout */}
-       <Route path="/" element={<Home />} />
-        
+       <Route path="/portfolio-pink/" element={<Home />} />
+       
         {/* Resto de las páginas con Layout */}
         <Route element={<Layout />}>
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:nameblog" element={<Blog />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/publications" element={<Publications />} />
+          <Route path="/portfolio-pink/about" element={<About />} />
+          <Route path="/portfolio-pink/blog" element={<Blog />} />
+          <Route path="/portfolio-pink/blog/:nameblog" element={<Blog />} />
+          <Route path="/portfolio-pink/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio-pink/publications" element={<Publications />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         
