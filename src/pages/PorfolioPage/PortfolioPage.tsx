@@ -19,7 +19,7 @@ const PortfolioPage: React.FC<{}> = () => {
             {
                 projects.map((project, index) => {
                 return (
-                    <ItemPortfolio date={project.date} description={project.description} id={project.id} title={project.title} tags={project.tags} key={index}/>
+                    <ItemPortfolio date={project.date} description={project.description} href={'#'} title={project.title} tags={project.tags} key={index}/>
                 )
                 })
             }

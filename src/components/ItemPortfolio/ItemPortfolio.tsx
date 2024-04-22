@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { TagLink } from '../TagLink';
 
 export interface Props {
     title: string,
     date: string,
     description: string,
-    id: number,
+    href: string,
     tags: string[]
 }
 
-const ItemPortfolio:React.FC<Props> = ({ title, date, description, id, tags }) => {
+const ItemPortfolio:React.FC<Props> = ({ title, date, description, tags,href }) => {
   return (
-    <Link to={`/blog/${id}`} className="blog-item-link">
+    <a href={href}>
       <div className="blog-item w-full min-h-96 flex flex-col justify-between items-start bg-lightPink p-8 shadow-lg transition duration-300 ease-in-out transform hover:scale-[1.01]  hover:shadow-lg">
         <div className='flex flex-col gap-2'>
           <h2 className="text-3xl font-medium text-primary">{title}</h2>
@@ -23,13 +22,15 @@ const ItemPortfolio:React.FC<Props> = ({ title, date, description, id, tags }) =
         {
           tags.map((taglabel, index)=>{
             return (
-              <TagLink active={false} href='#' label={taglabel} key={index} isRoute={false} />
+            <span key={index}  className={`button ${false ? 'active' : ''} p-2 bg-secondary text-center text-lg flex justify-center items-center rounded-lg font-bold text-textColor hover:scale-[1.01] `}>
+              {taglabel}
+            </span>
             )
           })
         }
       </div>
       </div>
-    </Link>
+    </a>
   );
 };
 
