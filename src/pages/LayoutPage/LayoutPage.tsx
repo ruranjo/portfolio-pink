@@ -25,7 +25,7 @@ const Layout: React.FC = () => {
       
         <div className='w-[100%] p-6 flex justify-center  bg-myBackground  fixed top-0 left-0 z-10'>
           <div className='w-[100%] flex justify-between sm:w-[65%]'>
-            <Link to="/" className="flex-1 flex justify-start items-center ">
+            <Link to="/portfolio-pink/" className="flex-1 flex justify-start items-center ">
               <h2 className="text-center text text-2xl font-extrabold text-primary">JOSE-LUIS</h2>
             </Link>
             <button
@@ -36,10 +36,10 @@ const Layout: React.FC = () => {
             </button>
             <nav className={`text-primary p-4 w-2/5 hidden text-base font-sans font-normal sm:block`}>
               <ul className="flex flex-col md:flex-row justify-between opacity-90">
-                <ListItem to="/about" active={location.pathname === '/about'}>About</ListItem>
-                <ListItem to="/blog" active={location.pathname === '/blog'}>Blog</ListItem>
-                <ListItem to="/portfolio" active={location.pathname === '/portfolio'}>Portfolio</ListItem>
-                <ListItem to="/publications" active={location.pathname === '/publications'}>Publications</ListItem>
+                <ListItem to="/portfolio-pink/about" active={location.pathname === '/about'}>About</ListItem>
+                <ListItem to="/portfolio-pink/blog" active={location.pathname === '/blog'}>Blog</ListItem>
+                <ListItem to="/portfolio-pink/portfolio" active={location.pathname === '/portfolio'}>Portfolio</ListItem>
+                <ListItem to="/portfolio-pink/publications" active={location.pathname === '/publications'}>Publications</ListItem>
               </ul>
             </nav>
           </div>

@@ -23,10 +23,10 @@ const HomePage:React.FC<{}> = () => {
               Thank you for visiting, and I hope you find your time here enjoyable!
             </p>
             <div className='w-[100%]  mt-4 flex justify-start gap-2'>
-              <TagLink active={false} href='/about' label='About' isRoute={true} />
-              <TagLink active={false} href='/blog' label='Blog' isRoute={true} />
-              <TagLink active={false} href='/portfolio' label='Portfolio' isRoute={true} />
-              <TagLink active={false} href='/publications' label='Publications' isRoute={true} />
+              <TagLink active={false} href='/portfolio-pink/about' label='About' isRoute={true} />
+              <TagLink active={false} href='/portfolio-pink/blog' label='Blog' isRoute={true} />
+              <TagLink active={false} href='/portfolio-pink/portfolio' label='Portfolio' isRoute={true} />
+              <TagLink active={false} href='/portfolio-pink/publications' label='Publications' isRoute={true} />
             </div>
             <div className='w-[100%] h-[200px]| flex justify-start gap-2 mt-2'>
             {

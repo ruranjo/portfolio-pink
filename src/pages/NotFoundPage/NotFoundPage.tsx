@@ -20,7 +20,7 @@ const NotFoundPage:React.FC<{}> = () => {
                 It's okay, since you can try again! If you'd rather not, though, you can go see some <a className='link' href='https://www.google.com/search?q=cat+photos'>cat photos</a>.  to make your day better :D
             </p>
             <div className='w-[100%]  mt-4 flex justify-start gap-2'>
-              <TagLink active={false} href='/' label='Return home' isRoute={true} />
+              <TagLink active={false} href='/portfolio-pink/' label='Return home' isRoute={true} />
             </div>
         </div>
  
